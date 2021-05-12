@@ -4,14 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 <!--    bean01-->
 <!--    Setter Injection-->
-    <bean class="Student" name="s">
+    <bean class="Student.Student" name="s">
         <property name="id" value="10001"/>
         <property name="name" value="Mubin"/>
         <property name="address" value="London"/>
     </bean>
 <!--    bean2-->
 <!--    Constructor Injection-->
-    <bean  class="Student" name="student01" p:id="1001" p:name="Uic" p:address="London">
+    <bean class="Student.Student" name="student01" p:id="1001" p:name="Uic" p:address="London">
     </bean>
 
 
