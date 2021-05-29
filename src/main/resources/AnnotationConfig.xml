@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config></context:annotation-config>
+    <bean class="Annotation.Car" name="c1" p:carName="Lamborghini" p:carModel="Hurcann" p:carNumber="15666"/>
+    <bean class="Annotation.Address" name="add" p:country="England" p:city="London" p:street="24/b Bakerstreet"/>
+    <bean class="Annotation.Employee" name="employee" p:name="Mubin"  p:phone="01774436194" p:id="100001"/>
+
+
+</beans>
