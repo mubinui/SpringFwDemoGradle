@@ -1,0 +1,2 @@
+Spring Expression Language
+    ->#{temp} id = temp in the xml file (Stereotype)
