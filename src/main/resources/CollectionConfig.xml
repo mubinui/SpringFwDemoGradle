@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:list list-class="java.util.LinkedList" id="deptbook">
+        <value>Introduction to Algorithm</value>
+        <value>Introduction to Data Structure</value>
+        <value>Introduction to Artificial Intelligence </value>
+    </util:list>
+
+    <util:set set-class="java.util.TreeSet" id="exam" >
+        <value>Final Exam</value>
+        <value>Semi Final Exam</value>
+        <value> Mid Final Exam </value>
+        <value>Pre Final Exam</value>
+
+    </util:set>
+    <util:properties id="logo">
+        <prop key="10001">uic.mubin@gmail.com</prop>
+        <prop key="10002">uic.mubin@outlook.com</prop>
+        <prop key="10003">uic.mubin@icloud.com</prop>
+    </util:properties>
+
+    <bean class="Collections.Student" name="student" p:name="Mubin UIC" p:id="1001" p:dept="CSE"
+          p:depBooks-ref="deptbook" p:exams-ref="exam" p:login-ref="logo"></bean>
+
+</beans>

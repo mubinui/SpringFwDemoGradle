@@ -16,7 +16,8 @@ public class Employee {
 
     public Employee() {
     }
-//  @Autowired can be used in constructor
+//  @Autowired can be used in constructor but all Need to like Address address or
+    // Car car
     public Employee(String name, String id, String phone, Address address, Car car) {
         this.name = name;
         this.id = id;
