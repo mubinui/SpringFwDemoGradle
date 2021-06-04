@@ -1,2 +1,21 @@
 Spring Expression Language
     ->#{temp} id = temp in the xml file (Stereotype)
+    ->#{expression} expression [classes,variable,methods.constructors,objects]
+    ->#{expression} expression [char,numeric,operators, keywords,special symbols]
+
+
+
+Example 1: Logical operation
+@value("#{8>5? "YES":"NO"}")
+private String flag;
+flag = "YES"
+
+
+Example 2: Arithmetic operation
+@Value("#{10+20}")
+private int add;
+add->30
+
+
+Example 3:
+
