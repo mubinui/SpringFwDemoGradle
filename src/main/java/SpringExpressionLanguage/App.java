@@ -2,6 +2,8 @@ package SpringExpressionLanguage;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.expression.Expression;
+import org.springframework.expression.spel.standard.SpelExpressionParser;
 
 public class App {
     public static void main(String[] args) {
@@ -13,6 +15,10 @@ public class App {
 
         Teacher t = con.getBean("teacher",Teacher.class);
         System.out.println(t);
+
+//        SpelExpressionParser temp = new SpelExpressionParser();
+//        Expression expression = temp.parseExpression("#{22+48}");
+//        System.out.println(expression.getValue());
 
     }
 }

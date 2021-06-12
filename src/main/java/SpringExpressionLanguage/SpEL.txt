@@ -2,6 +2,8 @@ Spring Expression Language
     ->#{temp} id = temp in the xml file (Stereotype)
     ->#{expression} expression [classes,variable,methods.constructors,objects]
     ->#{expression} expression [char,numeric,operators, keywords,special symbols]
+    -> Invoking static method and variable method -> T(class name).method(parameter/s)
+            ->Variable -> T(class name).variable
 
 
 
@@ -17,5 +19,7 @@ private int add;
 add->30
 
 
-Example 3:
+Example 3:Static method
+
+
 
