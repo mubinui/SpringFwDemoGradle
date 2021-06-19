@@ -3,17 +3,23 @@ package SpringJDBC.Entities;
 public class Student {
     private int id;
     private String name;
-    private String Dept;
+    private String dept;
     private String city;
 
     public Student(){
 
     }
 
+    public Student( String name, String dept, String city) {
+        this.name = name;
+        this.dept = dept;
+        this.city = city;
+    }
+
     public Student(int id, String name, String dept, String city) {
         this.id = id;
         this.name = name;
-        Dept = dept;
+        this.dept = dept;
         this.city = city;
     }
 
@@ -34,11 +40,11 @@ public class Student {
     }
 
     public String getDept() {
-        return Dept;
+        return dept;
     }
 
     public void setDept(String dept) {
-        Dept = dept;
+        this.dept = dept;
     }
 
     public String getCity() {
@@ -51,11 +57,11 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", Dept='" + Dept + '\'' +
-                ", city='" + city + '\'' +
-                '}';
+        return
+                "Id=" + id +
+                ", Name='" + name + '\'' +
+                ", Dept='" + dept + '\'' +
+                ", City='" + city + '\''
+                ;
     }
 }
